@@ -1,0 +1,43 @@
+.sidebar {
+  width: 18%;
+  min-height: 100vh;
+  border: 1px solid lightgray;
+  border-top: 0;
+  .options {
+    display: flex;
+    flex-direction: column;
+    //gap: 20px;
+    padding-top: 70%;
+
+    .option {
+      display: flex;
+      align-items: center;
+      padding: 25px 0px 25px 25px;
+      gap: 10px;
+      cursor: pointer;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      p {
+        font-size: max(1vw, 10px);
+      }
+      &.active {
+        background-color: #fff0ed;
+        border-color: tomato;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    .options {
+      .option {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

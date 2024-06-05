@@ -1,0 +1,56 @@
+.hero {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("./images/food.png") no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+
+  .contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    h2 {
+      font-weight: 500;
+      color: white;
+      font-size: max(4.5vw, 22px);
+    }
+    p {
+      color: white;
+      font-size: 1vw;
+    }
+    button {
+      border: none;
+      color: rgb(102, 102, 102);
+      padding: 1vw 2.3vw;
+      background-color: white;
+      font-size: max(1vw, 15px);
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .hero {
+    height: 30vw;
+    .contents {
+      max-width: 45%;
+      h2 {
+        padding: 15px 0px 5px 5px;
+      }
+      p {
+        display: none;
+      }
+      button {
+        padding: 2vw 4vw;
+      }
+    }
+  }
+}

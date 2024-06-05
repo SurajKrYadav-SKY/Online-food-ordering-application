@@ -1,0 +1,64 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: gray;
+  font-size: 16px;
+  form {
+    gap: 20px;
+    .add-img-upload {
+      label {
+        img {
+          padding: 10px 10px;
+          height: 100px;
+          width: 120px;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+        }
+      }
+    }
+    .add-product-name {
+      width: max(40%, 280px);
+      input {
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+    .add-product-desc {
+      width: max(40%, 280px);
+      textarea {
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+    .add-category-price {
+      display: flex;
+      gap: 30px;
+      .add-category {
+        select {
+          max-width: 140px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+      .add-price {
+        input {
+          max-width: 140px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+    .add-button {
+      max-width: 120px;
+      border: none;
+      padding: 10px;
+      background: linear-gradient(to right, #279ff5, #4bfadd);
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(to right, #57b6fa, #7cfce7);
+      }
+    }
+  }
+}

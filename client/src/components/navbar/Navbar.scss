@@ -1,0 +1,101 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    color: tomato;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    li {
+      cursor: pointer;
+    }
+
+    .active {
+      padding-bottom: 2px;
+      border-bottom: 3px solid tomato;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .icon {
+      cursor: pointer;
+    }
+
+    .search-icon {
+      position: relative;
+      .dot {
+        position: absolute;
+        min-width: 10px;
+        min-height: 10px;
+        background-color: tomato;
+        border-radius: 5px;
+        top: -8px;
+        right: -8px;
+      }
+    }
+
+    button {
+      background: linear-gradient(to right, #279ff5, #4bfadd);
+      border-radius: 20px;
+      padding: 10px 15px;
+      border: 1px solid lightgray;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: linear-gradient(to right, #3aaafa, #63fde3);
+        border: 1px solid tomato;
+      }
+    }
+    .navbar-profile {
+      position: relative;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .profile-dropdown {
+        position: absolute;
+        display: none;
+        right: 0;
+        z-index: 1;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          &:hover {
+            color: tomato;
+          }
+        }
+      }
+
+      &:hover {
+        .profile-dropdown {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: rgb(253, 224, 229);
+          padding: 12px 25px;
+          border: 1px solid tomato;
+          border-radius: 5px;
+          outline: 2px solid white;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
