@@ -7,10 +7,9 @@ const Hero = () => {
       <div className="contents">
         <h2>Order your favourite food here</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui
-          hic possimus eligendi eaque, fugit, voluptatibus quisquam aperiam,
-          totam nesciunt eveniet blanditiis soluta! Quibusdam harum inventore
-          aperiam dolore exercitationem incidunt minus, vero suscipit omnis!
+          Craving something delicious? Explore our diverse menu and order your favorites with just a click!
+          From mouth-watering meals to delightful desserts, we bring culinary perfection straight to your door.
+          Dive into a world of flavors and enjoy the ultimate dining experience at home. Order now and savor the goodness!
         </p>
         <button>View menu</button>
       </div>
